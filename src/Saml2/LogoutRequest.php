@@ -99,10 +99,7 @@ class LogoutRequest
                     && $spData['NameIDFormat'] != Constants::NAMEID_UNSPECIFIED) {
                     $nameIdFormat = $spData['NameIDFormat'];
                 }
-            } else {
-                $nameId = $idpData['entityId'];
-                $nameIdFormat = Constants::NAMEID_ENTITY;
-            }
+            } 
 
             /* From saml-core-2.0-os 8.3.6, when the entity Format is used: 
                "The NameQualifier, SPNameQualifier, and SPProvidedID attributes MUST be omitted.
